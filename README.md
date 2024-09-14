@@ -12,6 +12,7 @@ This is a simple React application that fetches random dad jokes from the API `h
 - [How It Works](#how-it-works)
 - [API](#api)
 - [License](#license)
+- [Developer](#developer)
 
 ## Installation
 
@@ -19,7 +20,7 @@ To get started with this project, you'll need to have [Node.js](https://nodejs.o
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/mrintania/dad-joke-fetcher.git
+    git clone https://github.com/Mrintania/Bun-React-Frontend-Web.git
     ```
 
 2. Navigate to the project directory:
@@ -153,6 +154,9 @@ The app fetches jokes from the following public API:
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
+## Developer
+- Mr.Pornsupat Vutisuwan 66130463 [Github : Mrintania](https://github.com/Mrintania)
+
 ---
 
 
@@ -166,6 +170,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 - [โครงสร้างของโปรเจกต์](#โครงสร้างของโปรเจกต์)
 - [การทำงานของโปรแกรม](#การทำงานของโปรแกรม)
 - [API ที่ใช้](#api-ที่ใช้)
+- [ผู้พัฒนา](#รายชื่อผู้พัฒนา)
 
 ## การติดตั้ง
 
