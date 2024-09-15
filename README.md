@@ -50,6 +50,39 @@ or if you're using Yarn:
 ```bash
 yarn start
 ```
+---
+
+## Running with Bun
+
+This project can also be run using [Bun](https://bun.sh/), a fast JavaScript runtime that can be used as an alternative to Node.js. If you don't have Bun installed, you can install it with the following command:
+
+```bash
+bun install
+```
+
+### Installing Dependencies with Bun
+
+To install the required dependencies using Bun, run:
+
+```bash
+bun install
+```
+
+### Running the Project with Bun
+
+Once the dependencies are installed, you can start the project with Bun by using the following command:
+
+```bash
+bun run start
+```
+
+Alternatively, for development mode:
+
+```bash
+bun dev
+```
+
+---
 
 Then open [http://localhost:3000](http://localhost:3000) in your browser to see the app.
 
@@ -156,13 +189,14 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Developer
 - Mr.Pornsupat Vutisuwan 66130463 [Github : Mrintania](https://github.com/Mrintania)
+- Mr.Panya leenavarut [Github : Noom04](https://github.com/Noom04)
 
 ---
 
 
 # แปลไทย
 
-โปรแกรมนี้เป็นแอปพลิเคชันที่พัฒนาด้วย React ซึ่งทำหน้าที่ดึงข้อมูลคำพูดตลก (joke) จาก API `https://icanhazdadjoke.com/` และแสดงผลลัพธ์บนหน้าเว็บ นอกจากนี้ แอปพลิเคชันยังมีปุ่มที่ช่วยให้ผู้ใช้สามารถดึงข้อมูลคำพูดตลกใหม่ได้เมื่อมีการกดปุ่ม
+โปรแกรมนี้เป็นแอปพลิเคชันที่พัฒนาด้วย React ซึ่งทำหน้าที่ดึงข้อมูลจาก API `https://icanhazdadjoke.com/` และแสดงผลลัพธ์บนหน้าเว็บ นอกจากนี้ แอปพลิเคชันยังมีปุ่มที่ช่วยให้ผู้ใช้สามารถดึงข้อมูลใหม่
 
 ## สารบัญ
 - [การติดตั้ง](#การติดตั้ง)
@@ -208,6 +242,41 @@ npm start
 ```bash
 yarn start
 ```
+คุณสามารถเพิ่มคำอธิบายการใช้งาน Bun ในส่วนของ `README.md` โดยแทรกข้อมูลเพิ่มเติมเกี่ยวกับการรันโปรเจกต์ด้วย Bun ได้ดังนี้:
+
+---
+
+## การใช้งานด้วย Bun
+
+โปรเจกต์นี้สามารถรันด้วย [Bun](https://bun.sh/) ซึ่งเป็น JavaScript runtime ที่ทำงานได้เร็วกว่า Node.js ในบางกรณี หากคุณยังไม่ได้ติดตั้ง Bun สามารถติดตั้งได้ด้วยคำสั่ง:
+
+```bash
+bun install
+```
+
+### การติดตั้ง Dependencies ด้วย Bun
+
+ใช้คำสั่งต่อไปนี้เพื่อติดตั้ง dependencies:
+
+```bash
+bun install
+```
+
+### การรันโปรเจกต์ด้วย Bun
+
+หลังจากติดตั้ง Dependencies แล้ว สามารถรันโปรเจกต์ด้วย Bun ได้โดยใช้คำสั่ง:
+
+```bash
+bun run start
+```
+
+หรือรันในโหมดการพัฒนา:
+
+```bash
+bun dev
+```
+
+--- 
 
 เมื่อโปรแกรมเริ่มทำงานแล้ว สามารถเข้าถึงได้ที่ [http://localhost:3000](http://localhost:3000) ผ่านเว็บเบราว์เซอร์ จะมีคำพูดตลกแสดงอยู่และผู้ใช้สามารถกดปุ่มเพื่อดึงคำพูดตลกใหม่ได้
 
@@ -302,3 +371,5 @@ const fetchJoke = () => {
 ## รายชื่อผู้พัฒนา
 
 - ส.อ. พรสุพพัต วุฒิสุวรรณ 66130463 [Github : Mrintania](https://github.com/Mrintania)
+- นาย ปัญญา หลีนวรัตน์  [Github : Noom04](https://github.com/Noom04)
+- อมรเทพ สืบสาย 66130060
