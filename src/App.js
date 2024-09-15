@@ -1,44 +1,34 @@
-import React, { useEffect, useState } from "react";
+import React, { useState, useEffect } from "react";
+import './App.css';
 
-function App() {
+const App = () => {
   const [joke, setJoke] = useState("");
-  const [loading, setLoading] = useState(true);
 
-  // ฟังก์ชันดึงข้อมูลจาก API
-  const fetchJoke = () => {
-    setLoading(true);
-    fetch("https://icanhazdadjoke.com/", {
-      method: "GET",
-      headers: {
-        Accept: "application/json",
-      },
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        setJoke(data.joke);
-        setLoading(false);
-      })
-      .catch((error) => {
-        console.error("Error fetching joke:", error);
-        setLoading(false);
-      });
+  const fetchJoke = async () => {
+    const response = await fetch("https://icanhazdadjoke.com/", {
+      headers: { Accept: "application/json" },
+    });
+    const data = await response.json();
+    setJoke(data.joke);
   };
 
-  // เรียกใช้ฟังก์ชัน fetchJoke ครั้งแรกเมื่อโหลดหน้า
   useEffect(() => {
     fetchJoke();
   }, []);
 
   return (
-    <div style={{ padding: "20px", textAlign: "center" }}>
-      <h1>Dad Joke</h1>
-      {loading ? <p>Loading...</p> : <p>{joke}</p>}
-      {/* ปุ่มสำหรับดึงข้อมูลใหม่ */}
-      <button onClick={fetchJoke} disabled={loading} style={{ marginTop: "20px" }}>
-        {loading ? "Loading..." : "Get New Joke"}
-      </button>
+    <div className="container d-flex flex-column justify-content-center align-items-center min-vh-100 bg-light">
+      <div className="card shadow-lg p-4 mb-4 bg-white rounded">
+        <h1 className="text-center mb-4">Random Joke Generator</h1>
+        <p className="joke-text text-center">{joke}</p>
+        <div className="text-center">
+          <button className="btn btn-primary mt-4" onClick={fetchJoke}>
+            Get New Joke
+          </button>
+        </div>
+      </div>
     </div>
   );
-}
+};
 
 export default App;

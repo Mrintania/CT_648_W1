@@ -36,3 +36,34 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+}
+
+h1 {
+  color: #343a40;
+  font-size: 2.5rem;
+}
+
+.joke-text {
+  font-size: 1.25rem;
+  color: #495057;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  font-size: 1rem;
+  padding: 10px 20px;
+}
+
+.card {
+  max-width: 600px;
+  width: 100%;
+}
+
+.container {
+  padding: 20px;
+}
